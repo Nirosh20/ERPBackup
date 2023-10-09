@@ -1,0 +1,8 @@
+# Include the Files & File paths to Exclude from git tracking
+
+/log
+sites/site1234.local
+sites/site123.local
+sites/site1.local
+sites/site7.local
+sites/niro.com/logs
