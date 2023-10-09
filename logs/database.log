@@ -1,0 +1,80 @@
+2023-10-06 16:52:42,057 WARNING database DDL Query made to DB:
+create table `tabDriver Logs` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`driver_name` varchar(140),
+`emp_id` varchar(140),
+`dl_no` varchar(140),
+`dl_image` text,
+`traffic_fines` text,
+`accident_history` varchar(140),
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+
+			index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2023-10-06 16:53:08,015 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDriver Logs` ADD UNIQUE INDEX IF NOT EXISTS emp_id (`emp_id`)
+2023-10-07 12:46:44,626 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDetails of New Driver` ADD COLUMN `aadhar_card` text
+2023-10-07 13:03:41,636 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDriver Logs` ADD COLUMN `mobile_no` varchar(140)
+2023-10-07 15:09:59,184 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDetails of New Driver` ADD COLUMN `emp_id` varchar(140) unique
+2023-10-07 15:09:59,200 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDetails of New Driver` ADD UNIQUE INDEX IF NOT EXISTS emp_id (`emp_id`)
+2023-10-07 15:15:20,350 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDriver Logs` ADD COLUMN `aadhar_card` varchar(140)
+2023-10-07 15:15:39,447 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDetails of New Driver` ADD COLUMN `mobile_no` varchar(140)
+2023-10-07 16:34:04,949 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDriver Logs` ADD COLUMN `link_details_of_new_driver` varchar(140)
+2023-10-07 17:36:55,881 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDriver Logs` ADD COLUMN `driver_rating` decimal(3,2)
+2023-10-09 11:16:56,865 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDriver Logs` MODIFY `driver_rating` decimal(3,2), ADD UNIQUE INDEX IF NOT EXISTS driver_name (`driver_name`)
+2023-10-09 14:06:11,511 WARNING database DDL Query made to DB:
+create table `tabRequest Que` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`sno` int(11) not null default 0,
+`name1` varchar(140),
+`team` varchar(140),
+`type` varchar(140),
+`date` date,
+`status` varchar(140),
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+
+			index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2023-10-09 14:07:28,252 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRequest Que` ADD UNIQUE INDEX IF NOT EXISTS team (`team`)
+2023-10-09 14:08:46,325 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRequest Que` MODIFY `sno` varchar(140)
+2023-10-09 14:10:54,128 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRequest Que` ADD COLUMN `naming_series` varchar(140)
+2023-10-09 15:15:57,983 WARNING database DDL Query made to DB:
+create sequence if not exists request_que_id_seq nocache nocycle
+2023-10-09 15:15:58,667 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRequest Que` MODIFY `name` bigint

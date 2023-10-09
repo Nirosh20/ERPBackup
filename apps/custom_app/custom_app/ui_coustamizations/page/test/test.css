@@ -1,0 +1,31 @@
+
+  .side-drawer6 {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Off-screen by default on the right side */
+    width: 300px;
+    
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    transition: right 0.3s ease-in-out; /* Use right property for transition */
+    z-index: 999;
+  }
+  
+  .side-drawer6.open {
+    right: 0; /* Displayed on screen when open */
+  }
+  .side-drawer6 ul {
+    list-style: none;
+    padding-top: 100px;
+}
+ 
+.side-drawer6  li {
+    padding: 10px;
+}
+
+.side-drawer6 a {
+    text-decoration: none;
+    color: #fff;
+}
+  

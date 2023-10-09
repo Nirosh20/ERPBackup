@@ -1,0 +1,205 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="userinterface.css" />
+  </head>
+  <style>
+    .image-container {
+      position: relative;
+      display: inline-block; /* Adjust as needed */
+      width: 100%;
+      height: 100%;
+    }
+
+    .overlay-button {
+      position: absolute;
+      top: 100px;
+      left: 120px; /* Adjust to position the button horizontally */
+      transform: translate(-50%, -50%);
+      padding: 10px 20px;
+      background-color: #79b0eb; /* Adjust button styles */
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 50px;
+      align-items: center;
+    }
+
+    .overlay-button1 {
+      position: absolute;
+      top: 100px;
+      left: 300px; /* Adjust to position the button horizontally */
+      transform: translate(-50%, -50%);
+      padding: 10px 20px;
+      background-color: #a78080; /* Adjust button styles */
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 50px;
+      width: 95px;
+    }
+
+    .overlay-button2 {
+      position: absolute;
+      top: 100px;
+      left: 480px; /* Adjust to position the button horizontally */
+      transform: translate(-50%, -50%);
+      padding: 10px 20px;
+      background-color: #ca80f1; /* Adjust button styles */
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 50px;
+    }
+
+    .overlay-button3 {
+      position: absolute;
+      top: 100px;
+      left: 660px; /* Adjust to position the button horizontally */
+      transform: translate(-50%, -50%);
+      padding: 10px 20px;
+      background-color: #e3a44c; /* Adjust button styles */
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 50px;
+    }
+
+    .overlay-button4 {
+      position: absolute;
+      top: 100px;
+      left: 840px; /* Adjust to position the button horizontally */
+      transform: translate(-50%, -50%);
+      padding: 10px 20px;
+      background-color: #edd414; /* Adjust button styles */
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 50px;
+    }
+
+    .overlay-button5 {
+      position: absolute;
+      top: 100px;
+      left: 1020px; /* Adjust to position the button horizontally */
+      transform: translate(-50%, -50%);
+      padding: 10px 20px;
+      background-color: #6186eb; /* Adjust button styles */
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 50px;
+      width: 95px;
+    }
+
+    .icon_middle {
+      width: 50px;
+      float: right;
+      width: 100px;
+      height: 85px;
+    }
+    .icon_middle span {
+      display: block;
+    }
+  </style>
+  <body>
+    <div class="image-container">
+      <img
+        src="/assets/erpnext/images/bachground.webp"
+        alt="Background Image"
+        width="100%"
+        margin: 0;
+        padding: 0;
+      />
+
+      <aside id="drawer1" class="drawer">
+        <ul>
+            <li><a href="#">Chart of Accounts</a></li>
+            <li><a href="#">Payment Entry</a></li>
+            <li><a href="#">Purchase Invoice</a></li>
+            <li><a href="#">journal Entry</a></li>
+            <li><a href="#">Suppliers</a></li>
+            <li><a href="#">Payment Re-concilation Tool</a></li>
+            <li><a href="#">Accounting Dashboard</a></li>
+        </ul>
+      </aside>
+
+      <aside id="drawer2" class="drawer">
+        <ul>
+            <li><a href="#">Drawer 2 - Item 1</a></li>
+            <li><a href="#">Drawer 2 - Item 2</a></li>
+            <li><a href="#">Drawer 2 - Item 1</a></li>
+            <li><a href="#">Drawer 2 - Item 2</a></li>
+          
+        </ul>
+      </aside>
+
+      <aside id="drawer3" class="drawer">
+        <ul>
+            <li><a href="/app/item">Item</a></li>
+            <li><a href="#">Material Request</a></li>
+            <li><a href="#">Purchase Receipt</a></li>
+            <li><a href="#">purchase order</a></li>
+            <li><a href="#">Stock Entry</a></li>
+            <li><a href="#">Stock Ledger</a></li>
+            <li><a href="#">Stock Balance</a></li>
+            <li><a href="#">Delivery Note</a></li>
+            <li><a href="#">Inventry Dashboard</a></li>
+          
+        </ul>
+      </aside>
+      <div class="side-drawer">
+        <ul>
+            <li><a href="/app/item">Item</a></li>
+            <li><a href="#">Material Request</a></li>
+            <li><a href="#">Purchase Receipt</a></li>
+            <li><a href="#">purchase order</a></li>
+            <li><a href="#">Stock Entry</a></li>
+            <li><a href="#">Stock Ledger</a></li>
+            <li><a href="#">Stock Balance</a></li>
+            <li><a href="#">Delivery Note</a></li>
+            <li><a href="#">Inventry Dashboard</a></li>
+          
+        </ul>
+      </div>
+    
+      
+
+      <div class="open-drawer-button" data-drawer="drawer2">
+        <a href=""  class="overlay-button"
+          ><i class="fa fa-users" aria-hidden="true"></i
+        ></a>
+        <a href="" 
+        >Hr</i
+      ></a>
+      </div>
+      <div class="open-drawer-button" data-drawer="drawer3">
+        <a href="" class="overlay-button1"
+          ><i class="fa fa-archive" aria-hidden="true"></i
+        ></a>
+      </div>
+      <div   >
+        <a href="" class="overlay-button2" id="toggle-drawer"
+          ><i class="fa fa-credit-card-alt"  aria-hidden="true" ></i
+        ></a>
+      </div>
+
+      <div class="open-drawer-button" data-drawer="drawer1">
+        <a href="" class="overlay-button3"
+          ><i class="fa fa-university"  aria-hidden="true"></i
+        ></a>
+      </div>
+      <div>
+        <a href="" class="overlay-button4"
+          ><i class="fa fa-cogs" aria-hidden="true"></i
+        ></a>
+      </div>
+      <div>
+        <a href="/app/purchase-order" class="overlay-button5"
+          ><i class="fa fa-database" aria-hidden="true"></i
+        ></a>
+      </div>
+     
+    </div>
+
+  </body>
+</html>

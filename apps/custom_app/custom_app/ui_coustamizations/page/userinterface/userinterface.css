@@ -1,0 +1,457 @@
+
+
+
+
+  .drawer {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Initially hide the drawer off-screen to the right */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    overflow-y: auto;
+    transition: right 0.3s ease-in-out;
+}
+
+.drawer ul {
+    list-style: none;
+    padding-top: 100px;
+}
+
+.drawer li {
+    padding: 10px;
+}
+
+.drawer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.open-drawer-button {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+}
+
+.side-drawer {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Off-screen by default on the right side */
+    width: 300px;
+    
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    transition: right 0.3s ease-in-out; /* Use right property for transition */
+    z-index: 999;
+  }
+  
+  .side-drawer.open {
+    right: 0; /* Displayed on screen when open */
+  }
+  .side-drawer ul {
+    list-style: none;
+    padding-top: 100px;
+}
+ 
+.side-drawer  li {
+    padding: 10px;
+}
+
+.side-drawer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.side-drawer li:hover {
+  text-decoration: underline;
+}
+
+.icon-container {
+    text-align: center
+    
+  }
+  
+  /* Styles for the label */
+  .label {
+    text-align: center;
+    font-size: 16px; /* Adjust the font size as needed */
+    margin-top: 0px; /* Adjust the spacing between icon and label */
+  }
+  
+  .side-drawer1 {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Off-screen by default on the right side */
+    width: 300px;
+    
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    transition: right 0.3s ease-in-out; /* Use right property for transition */
+    z-index: 999;
+  }
+  
+  .side-drawer1.open {
+    right: 0; /* Displayed on screen when open */
+  }
+  .side-drawer1 ul {
+    list-style: none;
+    padding-top: 100px;
+}
+ 
+.side-drawer1  li {
+    padding: 10px;
+}
+
+.side-drawer1 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.side-drawer1 li:hover {
+  text-decoration: underline;
+}
+
+.side-drawer2 {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Off-screen by default on the right side */
+    width: 300px;
+    
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    transition: right 0.3s ease-in-out; /* Use right property for transition */
+    z-index: 999;
+  }
+  
+  .side-drawer2.open {
+    right: 0; /* Displayed on screen when open */
+  }
+  .side-drawer2 ul {
+    list-style: none;
+    padding-top: 100px;
+}
+ 
+.side-drawer2  li {
+    padding: 10px;
+}
+
+.side-drawer2 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.side-drawer2 li:hover {
+  text-decoration: underline;
+}
+
+.side-drawer3 {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Off-screen by default on the right side */
+    width: 300px;
+    
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    transition: right 0.3s ease-in-out; /* Use right property for transition */
+    z-index: 999;
+  }
+  
+  .side-drawer3.open {
+    right: 0; /* Displayed on screen when open */
+  }
+  .side-drawer3 ul {
+    list-style: none;
+    padding-top: 100px;
+}
+ 
+.side-drawer3  li {
+    padding: 10px;
+}
+
+.side-drawer3 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.side-drawer3 li:hover {
+  text-decoration: underline;
+}
+
+.side-drawer4 {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Off-screen by default on the right side */
+    width: 300px;
+    
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    transition: right 0.3s ease-in-out; /* Use right property for transition */
+    z-index: 999;
+  }
+  
+  .side-drawer4.open {
+    right: 0; /* Displayed on screen when open */
+  }
+  .side-drawer4 ul {
+    list-style: none;
+    padding-top: 100px;
+}
+ 
+.side-drawer4  li {
+    padding: 10px;
+}
+
+.side-drawer4 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.side-drawer4 li:hover {
+  text-decoration: underline;
+}
+
+.side-drawer5 {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Off-screen by default on the right side */
+    width: 300px;
+    
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    transition: right 0.3s ease-in-out; /* Use right property for transition */
+    z-index: 999;
+  }
+  
+  .side-drawer5.open {
+    right: 0; /* Displayed on screen when open */
+  }
+  .side-drawer5 ul {
+    list-style: none;
+    padding-top: 100px;
+}
+ 
+.side-drawer5  li {
+    padding: 10px;
+}
+
+.side-drawer5 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.side-drawer5 li:hover {
+  text-decoration: underline;
+}
+
+.side-drawer6 {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Off-screen by default on the right side */
+    width: 300px;
+    
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    transition: right 0.3s ease-in-out; /* Use right property for transition */
+    z-index: 999;
+  }
+  
+  .side-drawer6.open {
+    right: 0; /* Displayed on screen when open */
+  }
+  .side-drawer6 ul {
+    list-style: none;
+    padding-top: 100px;
+}
+ 
+.side-drawer6  li {
+    padding: 10px;
+}
+
+.side-drawer6 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.side-drawer6 li:hover {
+  text-decoration: underline;
+}
+
+.side-drawer7 {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Off-screen by default on the right side */
+    width: 300px;
+    
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    transition: right 0.3s ease-in-out; /* Use right property for transition */
+    z-index: 999;
+  }
+  
+  .side-drawer7.open {
+    right: 0; /* Displayed on screen when open */
+  }
+  .side-drawer7 ul {
+    list-style: none;
+    padding-top: 100px;
+}
+ 
+.side-drawer7  li {
+    padding: 10px;
+}
+
+.side-drawer7 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.side-drawer7 li:hover {
+  text-decoration: underline;
+}
+
+.side-drawer8 {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Off-screen by default on the right side */
+    width: 300px;
+    
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    transition: right 0.3s ease-in-out; /* Use right property for transition */
+    z-index: 999;
+  }
+  
+  .side-drawer8.open {
+    right: 0; /* Displayed on screen when open */
+  }
+  .side-drawer8 ul {
+    list-style: none;
+    padding-top: 100px;
+}
+ 
+.side-drawer8  li {
+    padding: 10px;
+}
+
+.side-drawer8 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.side-drawer8 li:hover {
+  text-decoration: underline;
+}
+
+.side-drawer9 {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Off-screen by default on the right side */
+    width: 300px;
+    
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    transition: right 0.3s ease-in-out; /* Use right property for transition */
+    z-index: 999;
+  }
+  
+  .side-drawer9.open {
+    right: 0; /* Displayed on screen when open */
+  }
+  .side-drawer9 ul {
+    list-style: none;
+    padding-top: 100px;
+}
+ 
+.side-drawer9  li {
+    padding: 10px;
+}
+
+.side-drawer9 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.side-drawer9 li:hover {
+  text-decoration: underline;
+}
+
+.side-drawer10 {
+  position: fixed;
+  top: 0;
+  right: -300px; /* Off-screen by default on the right side */
+  width: 300px;
+  
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+  transition: right 0.3s ease-in-out; /* Use right property for transition */
+  z-index: 999;
+}
+
+.side-drawer10.open {
+  right: 0; /* Displayed on screen when open */
+}
+.side-drawer10 ul {
+  list-style: none;
+  padding-top: 100px;
+}
+
+.side-drawer10  li {
+  padding: 10px;
+}
+
+.side-drawer10 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.side-drawer10 li:hover {
+  text-decoration: underline;
+}
+
+.side-drawer11 {
+  position: fixed;
+  top: 0;
+  right: -300px; /* Off-screen by default on the right side */
+  width: 300px;
+  text-decoration:none;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+  transition: right 0.3s ease-in-out; /* Use right property for transition */
+  z-index: 999;
+}
+
+.side-drawer11 li:hover {
+  text-decoration: underline;
+}
+
+.side-drawer11.open {
+  right: 0; /* Displayed on screen when open */
+}
+.side-drawer11 ul {
+  list-style: none;
+  padding-top: 100px;
+}
+
+.side-drawer11  li {
+  padding: 10px;
+}
+
+.side-drawer11 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+

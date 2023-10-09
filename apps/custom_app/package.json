@@ -1,0 +1,14 @@
+{
+  "name": "custom_app",
+  "version": "1.0.0",
+  "description": "customizations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cd custom_dashboard && yarn dev",
+    "build": "cd custom_dashboard && yarn build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

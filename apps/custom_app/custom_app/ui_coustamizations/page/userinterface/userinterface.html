@@ -1,0 +1,584 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="userinterface.css" />
+  </head>
+  <style>
+    .image-container {
+      position: relative;
+      display: inline-block; /* Adjust as needed */
+      color: #e3a44c;
+      width: 100%;
+      height: 100%;
+      transition: background-color 0.9s ease;
+    }
+
+    .dropdown1 {
+      position: absolute;
+      display: inline-block;
+    }
+
+    .dropdown1 ul {
+      list-style: none;
+      padding-top: 10px;
+      background-color: #00000000;
+    }
+
+    .dropdown1 li {
+      background-color: #00000000;
+    }
+
+    .dropdown1-content {
+      display: none;
+      position: absolute;
+      background-color: #ffffff00;
+    }
+
+    .dropdown1-content b {
+      color: rgb(3, 3, 3);
+      text-align: left;
+      text-decoration: none;
+      display: block;
+      font-size: 15px;
+      padding: 10px;
+    }
+
+    .dropdown1-content a:hover {
+      background-color: #d22b2b;
+    }
+
+    .dropdown1:hover .dropdown1-content {
+      display: block;
+    }
+
+    .overlay-button {
+      position: absolute;
+      top: 100px;
+      left: 100px; /* Adjust to position the button horizontally */
+      transform: translate(-50%, -50%);
+      padding: 10px 20px;
+      background-color: #ffffff00; /* Adjust button styles */
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      width: 150px;
+      height: 110px;
+      font-size: 70px;
+      align-items: center;
+      transition: background-color 0.9s ease;
+      transition: font-weight 0.3s;
+    }
+
+    .overlay-button1 {
+      position: absolute;
+      top: 100px;
+      left: 300px; /* Adjust to position the button horizontally */
+      transform: translate(-50%, -50%);
+      padding: 10px 20px;
+      background-color: #ffffff00; /* Adjust button styles */
+      color: #fff;
+      text-decoration: none;
+      width: 150px;
+      height: 110px;
+      border-radius: 5px;
+      font-size: 70px;
+      align-items: center;
+      transition: font-weight 0.3s;
+    }
+
+    .overlay-button1 i:hover {
+      font-size: 80px;
+    }
+
+    .overlay-button2 {
+      position: absolute;
+      top: 100px;
+      left: 480px; /* Adjust to position the button horizontally */
+      transform: translate(-50%, -50%);
+      padding: 10px 20px;
+      background-color: #ffffff00; /* Adjust button styles */
+      color: #fff;
+      text-decoration: none;
+      width: 150px;
+      height: 110px;
+      border-radius: 5px;
+      font-size: 70px;
+      align-items: center;
+    }
+
+    .overlay-button2 i:hover {
+      font-size: 80px;
+    }
+
+    .overlay-button3 {
+      position: absolute;
+      top: 100px;
+      left: 660px; /* Adjust to position the button horizontally */
+      transform: translate(-50%, -50%);
+      padding: 10px 20px;
+      background-color: #ffffff00; /* Adjust button styles */
+      color: #fff;
+      text-decoration: none;
+      width: 150px;
+      height: 110px;
+      border-radius: 5px;
+      font-size: 70px;
+      align-items: center;
+    }
+    .overlay-button3 i:hover {
+      font-size: 80px;
+    }
+
+    .overlay-button4 {
+      position: absolute;
+      top: 100px;
+      left: 840px; /* Adjust to position the button horizontally */
+      transform: translate(-50%, -50%);
+      padding: 10px 20px;
+      background-color: #ffffff00; /* Adjust button styles */
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      width: 150px;
+      height: 110px;
+      font-size: 70px;
+      align-items: center;
+    }
+
+    .overlay-button4 i:hover {
+      font-size: 80px;
+    }
+
+    .overlay-button5 {
+      position: absolute;
+      top: 100px;
+      left: 1020px; /* Adjust to position the button horizontally */
+      transform: translate(-50%, -50%);
+      padding: 10px 20px;
+      background-color: #ffffff00; /* Adjust button styles */
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      width: 150px;
+      height: 110px;
+      font-size: 70px;
+      align-items: center;
+    }
+
+    .overlay-button5 i:hover {
+      font-size: 80px;
+    }
+
+    .button1 {
+      text-align: left;
+      background-color: #ffffff00;
+      width: 190px;
+      height: 40px;
+      border-radius: 5px;
+      color: #f1ebeb;
+      border-color: #fff;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .button1:hover {
+      background-color: #284050; /* New background color on hover */
+      color: #fff;
+      font-size: medium;
+    }
+  </style>
+  <body>
+    <div class="image-container">
+      <img src="/assets/erpnext/images/bachground.webp" alt="Background Image"
+      width="100%" margin: 0; padding: 0 />
+
+      <div class="side-drawer3">
+        <ul>
+          <li><a href="/app/account">Chart of Accounts</a></li>
+          <li><a href="/app/payment-entry">Payment Entry</a></li>
+          <li><a href="/app/purchase-invoice">Purchase Invoice</a></li>
+          <li><a href="/app/journal-entry">journal Entry</a></li>
+          <li><a href="/app/supplier">Suppliers</a></li>
+          <li>
+            <a href="/app/payment-reconciliation/Payment%20Reconciliation"
+              >Payment Re-concilation</a
+            >
+          </li>
+          <li>
+            <a href="/app/dashboard-view/Accounts">Accounting Dashboard</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="side-drawer2">
+        <ul>
+          <li><a href="/app/employee">Employee</a></li>
+          <li><a href="/app/designation">Designaton</a></li>
+          <li><a href="/app/department">Department</a></li>
+          <li>
+            <a href="/app/query-report/Employee%20Birthday"
+              >Employee Birthday</a
+            >
+          </li>
+          <li>
+            <a href="/app/dashboard-view/Human%20Resource">Hr Dashboard</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="side-drawer1">
+        <ul>
+          <li><a href="/app/item">Item</a></li>
+          <li><a href="/app/material-request">Material Request</a></li>
+          <li><a href="/app/purchase-receipt">Purchase Receipt</a></li>
+          <li><a href="/app/purchase-order">purchase order</a></li>
+          <li><a href="/app/stock-entry">Stock Entry</a></li>
+          <li><a href="/app/query-report/Stock%20Ledger">Stock Ledger</a></li>
+          <li><a href="/app/query-report/Stock%20Balance">Stock Balance</a></li>
+          <li><a href="/app/warehouse"> Warehouse </a></li>
+          <li><a href="/app/delivery-note">Delivery Note</a></li>
+          <li><a href="/app/dashboard-view/Stock">Inventry Dashboard</a></li>
+        </ul>
+      </div>
+      <div class="side-drawer">
+        <ul>
+          <li><a href="/app/salary-slip"> Salary Slip </a></li>
+          <li><a href="/app/salary-component"> Salary Component </a></li>
+          <li><a href="/app/salary-structure"> Salary Structure </a></li>
+          <li><a href="/app/income-tax-slab"> Income Tax Slab </a></li>
+          <li><a href="/app/payroll-period"> Payroll Period</a></li>
+          <li>
+            <a href="/app/salary-structure-assignment">
+              Salary Structure Assignment
+            </a>
+          </li>
+          <li><a href="/app/payroll-entry"> Payroll Entry</a></li>
+          <li>
+            <a href="/app/query-report/Provident%20Fund%20Deductions">
+              Provident Fund Deductions
+            </a>
+          </li>
+          <li><a href="/app/dashboard-view/Payroll">Payroll Dashboard</a></li>
+        </ul>
+      </div>
+
+      <div class="side-drawer4">
+        <ul>
+          <li><a href="/app/appraisal">Appraisal</a></li>
+          <li><a href="/app/kra">KRA</a></li>
+          <li><a href="app/appraisal-cycle">Appraisal Cycle</a></li>
+          <li><a href="app/appraisal-temlate">Appraisal Template</a></li>
+          <li>
+            <a href="/app/employee-feedback-criteria">
+              Employee Feedback Criteria</a
+            >
+          </li>
+          <li>
+            <a href="/app/employee-performance-feedback">
+              Employee Performance Feedback
+            </a>
+          </li>
+          <li><a href="/app/goal">Goal</a></li>
+          <li>
+            <a href="/app/query-report/Appraisal%20Overview">
+              Appraisal Overview</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="side-drawer5">
+        <ul>
+          <li><a href="/app/job-applicant">Job Applicant</a></li>
+          <li><a href="/app/job-opening">Job Opening</a></li>
+          <li><a href="/app/interview">Interview</a></li>
+          <li><a href="/app/job-offer">Job Offer</a></li>
+          <li><a href="/app/interview-type">Interview Type</a></li>
+          <li><a href="/app/interview-round">Interview Round</a></li>
+          <li><a href="/app/interview-feedback">Interview Feedback</a></li>
+          <li>
+            <a href="/app/dashboard-view/Recruitment">Recruitment Dashboard</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="side-drawer6">
+        <ul>
+          <li><a href="/app/attendance"> Attendance </a></li>
+          <li><a href="/app/attendance-request"> Attendance Request </a></li>
+          <li><a href="/app/employee-checkin"> Employee Checkin </a></li>
+          <li>
+            <a href="/app/query-report/Monthly%20Attendance%20Sheet">
+              Monthly Attendance Sheet
+            </a>
+          </li>
+          <li>
+            <a href="/app/query-report/Employees%20working%20on%20a%20holiday">
+              Employees working on a holiday</a
+            >
+          </li>
+          <li>
+            <a href="/app/employee-attendance-tool">
+              Employee Attendance Tool
+            </a>
+          </li>
+          <li><a href="/app/upload-attendance"> Upload Attendance</a></li>
+          <li>
+            <a href="/app/dashboard-view/Attendance">Attendance Dashboard</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="side-drawer7">
+        <ul>
+          <li><a href="/app/travel-request"> Travel Request </a></li>
+          <li><a href="/app/purpose-of-travel"> Purpose of Travel</a></li>
+        </ul>
+      </div>
+
+      <div class="side-drawer8">
+        <ul>
+          <li><a href="/app/expense-claim"> Expense Claim </a></li>
+          <li><a href="/app/expense-claim-type"> Expense Claim Type</a></li>
+          <li>
+            <a href="/app/query-report/Unpaid%20Expense%20Claim">
+              Unpaid Expense Claim
+            </a>
+          </li>
+          <li>
+            <a href="/app/query-report/Vehicle%20Expenses"> Vehicle Expenses</a>
+          </li>
+
+          <li>
+            <a href="/app/dashboard-view/Expense%20Claims"
+              >Expense Claim Dashboard</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="side-drawer9">
+        <ul>
+          <li><a href="/app/holiday-list"> Holiday List </a></li>
+          <li><a href="/app/leave-type"> Leave Type </a></li>
+          <li>
+            <a href="/app/query-report/Employee%20Leave%20Balance">
+              Employee Leave Balance
+            </a>
+          </li>
+          <li>
+            <a href="/app/query-report/Employee%20Leave%20Balance%20Summary">
+              Employee Leave Balance Summary
+            </a>
+          </li>
+          <li>
+            <a href="/app/query-report/Employees%20working%20on%20a%20holiday">
+              Employees working on a holiday</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="side-drawer10">
+        <ul>
+          <li><a href="/app/work-order"> Work Order </a></li>
+          <li><a href="/app/bom">BOM</a></li>
+          <li><a href="/app/production-plan">Production Plan</a></li>
+          <li><a href="/app/job-card">Job Card</a></li>
+          <li>
+            <a href="/app/query-report/Exponential%20Smoothing%20Forecasting"
+              >Forecasting</a
+            >
+          </li>
+          <li>
+            <a href="/app/query-report/BOM%20Stock%20Report"
+              >BOM Stock Report</a
+            >
+          </li>
+          <li>
+            <a href="/app/query-report/Production%20Planning%20Report"
+              >Production Planning Report</a
+            >
+          </li>
+          <li>
+            <a href="/app/query-report/Job%20Card%20Summary">
+              Job Card Summary
+            </a>
+          </li>
+          <li>
+            <a href="/app/dashboard-view/Manufacturing"
+              >Manufacturing Dashboard</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="side-drawer11">
+        <ul>
+          <li><a href="/app/employee-onboarding"> Employee Onboarding </a></li>
+          <li><a href="/app/employee-promotion"> Employee Promotion </a></li>
+          <li><a href="/app/employee-separation"> Employee Separation </a></li>
+          <li>
+            <a href="/app/employee-separation-template">
+              Employee Separation Template
+            </a>
+          </li>
+          <li>
+            <a href="/app/full-and-final-statement">
+              Full and Final Settlement
+            </a>
+          </li>
+          <li>
+            <a href="/app/query-report/Employee%20Analytics">
+              Employee Analytics</a
+            >
+          </li>
+          <li>
+            <a href="/app/query-report/Employee%20Information">
+              Employee Information
+            </a>
+          </li>
+          <li><a href="/app/exit-interview"> Employee Exits </a></li>
+          <li>
+            <a href="/app/dashboard-view/Employee%20Lifecycle"
+              >Employee Lifecycle Dashboard</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <a href="">
+        <div class="overlay-button">
+          <div class="icon-container">
+            <div class="dropdown1">
+              <i class="fa fa-users" aria-hidden="true"></i>
+              <div class="label">Hr</div>
+              <div class="dropdown1-content">
+                <ul>
+                  <li>
+                    <b>
+                      <button class="button1" id="toggle-drawer2">
+                        <i class="fa fa-users"> </i>
+                        Hr
+                      </button></b
+                    >
+                  </li>
+
+                  <li>
+                    <b>
+                      <button class="button1" id="toggle-drawer4">
+                        <i class="fa fa-star"> </i>
+                        Performance
+                      </button></b
+                    >
+                  </li>
+                  <li>
+                    <b>
+                      <button class="button1" id="toggle-drawer5">
+                        <i class="fa fa-user-plus"> </i>
+                        Recruitment
+                      </button></b
+                    >
+                  </li>
+                  <li>
+                    <b>
+                      <button class="button1" id="toggle-drawer6">
+                        <i class="fa fa-calendar-check-o"> </i> Shift &
+                        Attendance
+                      </button></b
+                    >
+                  </li>
+                  <li>
+                    <b>
+                      <button class="button1" id="toggle-drawer7">
+                        <i class="fa fa-plane"> </i>
+                        Travel Request
+                      </button></b
+                    >
+                  </li>
+                  <li>
+                    <b>
+                      <button class="button1" id="toggle-drawer11">
+                        <i class="fa fa-users"> </i>
+
+                        Employee Lifecycle
+                      </button></b
+                    >
+                  </li>
+
+                  <li>
+                    <b>
+                      <button class="button1" id="toggle-drawer8">
+                        <i class="fa fa-calendar-plus-o"> </i>
+                        Expence Claims
+                      </button></b
+                    >
+                  </li>
+                  <li>
+                    <b>
+                      <button class="button1" id="toggle-drawer9">
+                        <i class="fa fa-usd"> </i>
+                        Leave
+                      </button></b
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="">
+        <div class="overlay-button1">
+          <div class="icon-container">
+            <i class="fa fa-archive" id="toggle-drawer1" aria-hidden="true"></i>
+          </div>
+          <div class="label">Stock</div>
+        </div>
+      </a>
+
+      <a href="">
+        <div class="overlay-button2">
+          <div class="icon-container">
+            <i
+              class="fa fa-credit-card-alt"
+              id="toggle-drawer"
+              aria-hidden="true"
+            ></i>
+          </div>
+          <div class="label">Payroll</div>
+        </div>
+      </a>
+
+      <a href="">
+        <div class="overlay-button3">
+          <div class="icon-container">
+            <i
+              class="fa fa-university"
+              id="toggle-drawer3"
+              aria-hidden="true"
+            ></i>
+          </div>
+          <div class="label">Accounting</div>
+        </div>
+      </a>
+
+      <a href="">
+        <div class="overlay-button4">
+          <div class="icon-container">
+            <i class="fa fa-cogs" id="toggle-drawer10" aria-hidden="true"></i>
+          </div>
+          <div class="label">Manufacturing</div>
+        </div>
+      </a>
+
+      <a href="/app/purchase-order">
+        <div class="overlay-button5">
+          <div class="icon-container">
+            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+            <div class="label">Purchase_Order</div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </body>
+</html>

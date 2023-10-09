@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Styling for the sidebar */
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #f1f1f1;
+        }
+
+        /* Styling for the button icon */
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            padding-left: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+
+<!-- The button to open the sidebar -->
+<button ><span class="openbtn" onclick="openNav()">&#9776; Open Sidebar</span></button>
+
+<!-- The sidebar -->
+<div id="mySidebar" class="sidebar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</div>
+
+<script>
+  function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+  }
+
+  function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+  }
+</script>
+
+</body>
+</html>

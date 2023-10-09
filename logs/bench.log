@@ -1,0 +1,277 @@
+2023-09-30 02:28:30,475 DEBUG cd /home/nirosh/frappe-bench && /usr/bin/virtualenv --quiet env -p python3
+2023-09-30 02:28:30,913 DEBUG cd /home/nirosh/frappe-bench && /home/nirosh/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2023-09-30 02:29:05,437 LOG Getting frappe
+2023-09-30 02:29:05,437 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-14 --depth 1 --origin upstream
+2023-09-30 02:29:09,596 LOG Installing frappe
+2023-09-30 02:29:09,597 DEBUG cd /home/nirosh/frappe-bench && /home/nirosh/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/nirosh/frappe-bench/apps/frappe 
+2023-09-30 02:31:11,800 DEBUG cd /home/nirosh/frappe-bench/apps/frappe && yarn install
+2023-09-30 02:31:43,892 DEBUG cd frappe-bench && bench build
+2023-09-30 02:31:44,117 INFO /usr/local/bin/bench build
+2023-09-30 02:32:11,356 LOG setting up backups
+2023-09-30 02:32:11,524 LOG backups were set up
+2023-09-30 02:32:11,524 INFO Bench frappe-bench initialized
+2023-09-30 02:32:28,375 INFO /usr/local/bin/bench start
+2023-09-30 02:32:29,479 INFO /usr/local/bin/bench watch
+2023-09-30 02:32:29,585 INFO /usr/local/bin/bench serve --port 8000
+2023-09-30 02:32:29,627 INFO /usr/local/bin/bench worker --queue default
+2023-09-30 02:32:29,651 INFO /usr/local/bin/bench schedule
+2023-09-30 02:32:29,701 INFO /usr/local/bin/bench worker --queue short
+2023-09-30 02:32:29,732 INFO /usr/local/bin/bench worker --queue long
+2023-09-30 02:33:39,556 INFO /usr/local/bin/bench new-site site1.local
+2023-09-30 02:33:53,198 INFO /usr/local/bin/bench new-site site1.local
+2023-09-30 02:34:14,195 INFO /usr/local/bin/bench new-site site7.local
+2023-09-30 02:34:35,356 INFO /usr/local/bin/bench new-site site123.local
+2023-09-30 02:37:35,738 INFO /usr/local/bin/bench new-site site123.local
+2023-09-30 02:37:44,468 INFO /usr/local/bin/bench new-site site1234.local
+2023-09-30 02:41:21,008 INFO /usr/local/bin/bench use site1234.local
+2023-09-30 02:41:39,196 INFO /usr/local/bin/bench get-app payments
+2023-09-30 02:41:50,233 LOG Getting payments
+2023-09-30 02:41:50,233 DEBUG cd ./apps && git clone https://github.com/frappe/payments.git  --depth 1 --origin upstream
+2023-09-30 02:41:51,695 WARNING /usr/local/bin/bench get-app payments executed with exit code 1
+2023-09-30 02:42:39,418 INFO /usr/local/bin/bench get-app erpnext --branch version-14
+2023-09-30 02:42:40,512 LOG Getting erpnext
+2023-09-30 02:42:40,512 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-14 --depth 1 --origin upstream
+2023-09-30 02:42:50,445 LOG Installing erpnext
+2023-09-30 02:42:50,446 DEBUG cd /home/nirosh/frappe-bench && /home/nirosh/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/nirosh/frappe-bench/apps/erpnext 
+2023-09-30 02:44:15,500 DEBUG cd /home/nirosh/frappe-bench/apps/erpnext && yarn install
+2023-09-30 02:44:16,841 DEBUG bench build --app erpnext
+2023-09-30 02:44:17,042 INFO /usr/local/bin/bench build --app erpnext
+2023-09-30 02:45:04,055 INFO /usr/local/bin/bench start
+2023-09-30 02:45:05,415 INFO /usr/local/bin/bench schedule
+2023-09-30 02:45:05,419 INFO /usr/local/bin/bench serve --port 8000
+2023-09-30 02:45:05,430 INFO /usr/local/bin/bench worker --queue short
+2023-09-30 02:45:05,451 INFO /usr/local/bin/bench watch
+2023-09-30 02:45:05,474 INFO /usr/local/bin/bench worker --queue long
+2023-09-30 02:45:05,529 INFO /usr/local/bin/bench worker --queue default
+2023-09-30 02:47:42,120 INFO /usr/local/bin/bench --site site1234.local install-app erpnext
+2023-09-30 02:53:32,219 INFO /usr/local/bin/bench start
+2023-09-30 03:47:34,716 INFO /usr/local/bin/bench get-app site1234.local https://github.com/vaibharaj/Userinterface
+2023-09-30 03:47:35,226 LOG Getting Userinterface
+2023-09-30 03:47:35,226 DEBUG cd ./apps && git clone https://github.com/vaibharaj/Userinterface  --depth 1 --origin upstream
+2023-09-30 03:47:36,676 LOG Installing custom_app
+2023-09-30 03:47:36,677 DEBUG cd /home/nirosh/frappe-bench && /home/nirosh/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/nirosh/frappe-bench/apps/custom_app 
+2023-09-30 03:47:38,048 DEBUG cd /home/nirosh/frappe-bench/apps/custom_app && yarn install
+2023-09-30 03:47:38,694 DEBUG bench build --app custom_app
+2023-09-30 03:47:38,892 INFO /usr/local/bin/bench build --app custom_app
+2023-09-30 03:47:43,815 WARNING bench build --app custom_app executed with exit code 1
+2023-09-30 03:47:43,815 WARNING /usr/local/bin/bench get-app site1234.local https://github.com/vaibharaj/Userinterface executed with exit code 1
+2023-09-30 03:57:08,438 INFO /usr/local/bin/bench build
+2023-09-30 04:03:24,675 INFO /usr/local/bin/bench build
+2023-09-30 04:08:50,438 INFO /usr/local/bin/bench build
+2023-09-30 06:00:01,622 INFO /usr/local/bin/bench --verbose --site all backup
+2023-09-30 06:02:09,548 INFO /usr/local/bin/bench start
+2023-09-30 06:02:10,765 INFO /usr/local/bin/bench serve --port 8000
+2023-09-30 06:02:10,797 INFO /usr/local/bin/bench worker --queue long
+2023-09-30 06:02:10,810 INFO /usr/local/bin/bench worker --queue short
+2023-09-30 06:02:10,873 INFO /usr/local/bin/bench worker --queue default
+2023-09-30 06:02:10,948 INFO /usr/local/bin/bench schedule
+2023-09-30 06:02:10,953 INFO /usr/local/bin/bench watch
+2023-09-30 06:04:58,393 INFO /usr/local/bin/bench get -app https://github.com/vaibharaj/Userinterface
+2023-09-30 06:04:59,031 WARNING /usr/local/bin/bench get -app https://github.com/vaibharaj/Userinterface executed with exit code 2
+2023-09-30 06:28:48,834 INFO /usr/local/bin/bench --site dcode.com install-app payments
+2023-09-30 06:29:04,018 INFO /usr/local/bin/bench --site site1234.local install-app payments
+2023-09-30 06:31:02,105 INFO /usr/local/bin/bench get-app payments
+2023-09-30 06:31:18,148 WARNING /usr/local/bin/bench get-app payments executed with exit code 1
+2023-10-03 01:16:38,576 INFO /usr/local/bin/bench start
+2023-10-03 01:16:45,227 INFO /usr/local/bin/bench serve --port 8000
+2023-10-03 01:16:45,263 INFO /usr/local/bin/bench schedule
+2023-10-03 01:16:45,314 INFO /usr/local/bin/bench worker --queue long
+2023-10-03 01:16:45,319 INFO /usr/local/bin/bench worker --queue short
+2023-10-03 01:16:45,394 INFO /usr/local/bin/bench worker --queue default
+2023-10-03 01:16:45,405 INFO /usr/local/bin/bench watch
+2023-10-03 18:00:02,208 INFO /usr/local/bin/bench --verbose --site all backup
+2023-10-04 12:02:39,234 INFO /usr/local/bin/bench start
+2023-10-04 12:02:46,688 INFO /usr/local/bin/bench schedule
+2023-10-04 12:02:46,693 INFO /usr/local/bin/bench worker --queue short
+2023-10-04 12:02:46,746 INFO /usr/local/bin/bench serve --port 8000
+2023-10-04 12:02:46,753 INFO /usr/local/bin/bench watch
+2023-10-04 12:02:46,787 INFO /usr/local/bin/bench worker --queue long
+2023-10-04 12:02:46,822 INFO /usr/local/bin/bench worker --queue default
+2023-10-04 12:04:10,198 INFO /usr/local/bin/bench start
+2023-10-04 12:04:11,309 INFO /usr/local/bin/bench worker --queue default
+2023-10-04 12:04:11,396 INFO /usr/local/bin/bench worker --queue short
+2023-10-04 12:04:11,405 INFO /usr/local/bin/bench schedule
+2023-10-04 12:04:11,432 INFO /usr/local/bin/bench serve --port 8000
+2023-10-04 12:04:11,467 INFO /usr/local/bin/bench worker --queue long
+2023-10-04 12:04:11,480 INFO /usr/local/bin/bench watch
+2023-10-04 16:23:54,227 INFO /usr/local/bin/bench start
+2023-10-04 16:24:01,168 INFO /usr/local/bin/bench watch
+2023-10-04 16:24:01,349 INFO /usr/local/bin/bench worker --queue short
+2023-10-04 16:24:01,599 INFO /usr/local/bin/bench schedule
+2023-10-04 16:24:01,692 INFO /usr/local/bin/bench worker --queue long
+2023-10-04 16:24:01,728 INFO /usr/local/bin/bench worker --queue default
+2023-10-04 16:24:01,774 INFO /usr/local/bin/bench serve --port 8000
+2023-10-04 18:00:02,434 INFO /usr/local/bin/bench --verbose --site all backup
+2023-10-04 18:02:42,804 INFO /usr/local/bin/bench start
+2023-10-04 18:02:44,774 INFO /usr/local/bin/bench schedule
+2023-10-04 18:02:44,879 INFO /usr/local/bin/bench serve --port 8000
+2023-10-04 18:02:44,904 INFO /usr/local/bin/bench worker --queue short
+2023-10-04 18:02:44,950 INFO /usr/local/bin/bench worker --queue default
+2023-10-04 18:02:44,960 INFO /usr/local/bin/bench watch
+2023-10-04 18:02:44,976 INFO /usr/local/bin/bench worker --queue long
+2023-10-05 10:56:19,472 INFO /usr/local/bin/bench start
+2023-10-05 10:56:21,507 INFO /usr/local/bin/bench worker --queue long
+2023-10-05 10:56:21,830 INFO /usr/local/bin/bench worker --queue default
+2023-10-05 10:56:21,894 INFO /usr/local/bin/bench watch
+2023-10-05 10:56:21,901 INFO /usr/local/bin/bench serve --port 8000
+2023-10-05 10:56:21,903 INFO /usr/local/bin/bench schedule
+2023-10-05 10:56:22,013 INFO /usr/local/bin/bench worker --queue short
+2023-10-05 12:00:02,106 INFO /usr/local/bin/bench --verbose --site all backup
+2023-10-05 14:03:55,292 INFO /usr/local/bin/bench get-app hrms
+2023-10-05 14:03:56,963 LOG Getting hrms
+2023-10-05 14:03:56,963 DEBUG cd ./apps && git clone https://github.com/frappe/hrms.git  --depth 1 --origin upstream
+2023-10-05 14:04:00,647 WARNING /usr/local/bin/bench get-app hrms executed with exit code 1
+2023-10-05 14:05:26,179 INFO /usr/local/bin/bench start
+2023-10-05 14:05:28,213 INFO /usr/local/bin/bench watch
+2023-10-05 14:05:28,315 INFO /usr/local/bin/bench serve --port 8000
+2023-10-05 14:05:28,380 INFO /usr/local/bin/bench worker --queue long
+2023-10-05 14:05:28,380 INFO /usr/local/bin/bench schedule
+2023-10-05 14:05:28,412 INFO /usr/local/bin/bench worker --queue short
+2023-10-05 14:05:28,477 INFO /usr/local/bin/bench worker --queue default
+2023-10-05 14:06:47,109 INFO /usr/local/bin/bench remove-app hrms
+2023-10-05 14:06:48,002 WARNING /usr/local/bin/bench remove-app hrms executed with exit code 1
+2023-10-05 14:07:07,352 INFO /usr/local/bin/bench get-app hrms
+2023-10-05 14:07:13,468 LOG Getting hrms
+2023-10-05 14:07:13,468 DEBUG cd ./apps && git clone hrms --branch develop --depth 1 --origin upstream
+2023-10-05 14:07:13,470 WARNING cd ./apps && git clone hrms --branch develop --depth 1 --origin upstream executed with exit code 128
+2023-10-05 14:07:13,470 WARNING /usr/local/bin/bench get-app hrms executed with exit code 1
+2023-10-05 16:27:37,440 INFO /usr/local/bin/bench --site site1234.local mariadb
+2023-10-05 16:28:26,603 INFO /usr/local/bin/bench mariadb
+2023-10-05 16:30:02,413 INFO /usr/local/bin/bench start
+2023-10-05 16:31:46,252 INFO /usr/local/bin/bench start
+2023-10-05 16:32:56,285 INFO /usr/local/bin/bench start
+2023-10-05 16:34:30,498 INFO /usr/local/bin/bench start
+2023-10-05 16:35:41,287 INFO /usr/local/bin/bench start
+2023-10-05 16:37:23,061 INFO /usr/local/bin/bench use site123.local
+2023-10-05 16:37:28,383 INFO /usr/local/bin/bench start
+2023-10-05 16:37:43,688 INFO /usr/local/bin/bench add-to-host
+2023-10-05 16:37:44,672 WARNING /usr/local/bin/bench add-to-host executed with exit code 2
+2023-10-05 16:37:57,041 INFO /usr/local/bin/bench add-to-hosts
+2023-10-05 16:38:09,515 INFO /usr/local/bin/bench start
+2023-10-05 16:39:38,894 INFO /usr/local/bin/bench start
+2023-10-05 16:44:45,303 INFO /usr/local/bin/bench restart
+2023-10-05 16:51:39,664 INFO /usr/local/bin/bench start
+2023-10-05 16:51:46,580 INFO /usr/local/bin/bench serve --port 8000
+2023-10-05 16:51:46,601 INFO /usr/local/bin/bench watch
+2023-10-05 16:51:46,630 INFO /usr/local/bin/bench worker --queue default
+2023-10-05 16:51:46,647 INFO /usr/local/bin/bench worker --queue long
+2023-10-05 16:51:46,649 INFO /usr/local/bin/bench worker --queue short
+2023-10-05 16:51:46,687 INFO /usr/local/bin/bench schedule
+2023-10-05 16:56:49,244 INFO /usr/local/bin/bench start
+2023-10-05 16:56:50,494 INFO /usr/local/bin/bench schedule
+2023-10-05 16:56:50,533 INFO /usr/local/bin/bench serve --port 8000
+2023-10-05 16:56:50,554 INFO /usr/local/bin/bench worker --queue default
+2023-10-05 16:56:50,578 INFO /usr/local/bin/bench worker --queue long
+2023-10-05 16:56:50,630 INFO /usr/local/bin/bench watch
+2023-10-05 16:56:50,702 INFO /usr/local/bin/bench worker --queue short
+2023-10-05 16:57:39,976 INFO /usr/local/bin/bench start mariadb
+2023-10-05 16:57:52,452 INFO /usr/local/bin/bench services mariadb
+2023-10-05 16:58:01,684 INFO /usr/local/bin/bench services start mariadb
+2023-10-05 16:58:20,116 INFO /usr/local/bin/bench frappe --help
+2023-10-05 16:58:51,545 INFO /usr/local/bin/bench mariadb
+2023-10-05 17:04:51,895 INFO /usr/local/bin/bench start
+2023-10-05 17:04:53,022 INFO /usr/local/bin/bench schedule
+2023-10-05 17:04:53,034 INFO /usr/local/bin/bench worker --queue default
+2023-10-05 17:04:53,093 INFO /usr/local/bin/bench worker --queue short
+2023-10-05 17:04:53,100 INFO /usr/local/bin/bench serve --port 8000
+2023-10-05 17:04:53,156 INFO /usr/local/bin/bench watch
+2023-10-05 17:04:53,163 INFO /usr/local/bin/bench worker --queue long
+2023-10-05 17:08:31,625 INFO /usr/local/bin/bench start
+2023-10-05 17:08:32,704 INFO /usr/local/bin/bench serve --port 8000
+2023-10-05 17:08:32,796 INFO /usr/local/bin/bench schedule
+2023-10-05 17:08:32,801 INFO /usr/local/bin/bench worker --queue long
+2023-10-05 17:08:32,820 INFO /usr/local/bin/bench worker --queue short
+2023-10-05 17:08:32,911 INFO /usr/local/bin/bench watch
+2023-10-05 17:08:32,915 INFO /usr/local/bin/bench worker --queue default
+2023-10-05 17:11:43,356 INFO /usr/local/bin/bench new-site niro.com
+2023-10-05 17:14:55,742 INFO /usr/local/bin/bench use niro.com
+2023-10-05 17:16:19,873 INFO /usr/local/bin/bench start
+2023-10-05 17:16:20,946 INFO /usr/local/bin/bench serve --port 8000
+2023-10-05 17:16:21,016 INFO /usr/local/bin/bench watch
+2023-10-05 17:16:21,070 INFO /usr/local/bin/bench schedule
+2023-10-05 17:16:21,087 INFO /usr/local/bin/bench worker --queue short
+2023-10-05 17:16:21,206 INFO /usr/local/bin/bench worker --queue long
+2023-10-05 17:16:21,226 INFO /usr/local/bin/bench worker --queue default
+2023-10-05 18:00:01,436 INFO /usr/local/bin/bench --verbose --site all backup
+2023-10-05 19:18:59,161 INFO /usr/local/bin/bench get-app erpnext --branch version-14
+2023-10-05 19:19:04,746 LOG Getting erpnext
+2023-10-05 19:19:04,747 DEBUG cd ./apps && git clone erpnext --branch version-14 --depth 1 --origin upstream
+2023-10-05 19:19:04,748 WARNING cd ./apps && git clone erpnext --branch version-14 --depth 1 --origin upstream executed with exit code 128
+2023-10-05 19:19:04,748 WARNING /usr/local/bin/bench get-app erpnext --branch version-14 executed with exit code 1
+2023-10-05 19:19:41,634 INFO /usr/local/bin/bench get-app https://github.com/frappe/erpnext --branch version-14
+2023-10-05 19:19:42,140 LOG Getting erpnext
+2023-10-05 19:19:42,141 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext --branch version-14 --depth 1 --origin upstream
+2023-10-05 19:19:56,067 LOG Installing erpnext
+2023-10-05 19:19:56,067 DEBUG cd /home/nirosh/frappe-bench && /home/nirosh/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/nirosh/frappe-bench/apps/erpnext 
+2023-10-05 19:20:00,767 DEBUG cd /home/nirosh/frappe-bench/apps/erpnext && yarn install
+2023-10-05 19:20:17,356 DEBUG bench build --app erpnext
+2023-10-05 19:20:17,706 INFO /usr/local/bin/bench build --app erpnext
+2023-10-05 19:20:58,100 INFO /usr/local/bin/bench --site niro.com install-app erpnext
+2023-10-05 19:21:26,024 INFO /usr/local/bin/bench --site niro.com reinstall
+2023-10-05 19:21:50,457 INFO /usr/local/bin/bench --site niro.com reinstall
+2023-10-05 19:40:14,138 INFO /usr/local/bin/bench get-app erpnext --branch version-14
+2023-10-05 19:40:30,608 LOG Getting erpnext
+2023-10-05 19:40:30,609 DEBUG cd ./apps && git clone erpnext --branch version-14 --depth 1 --origin upstream
+2023-10-05 19:40:30,611 WARNING cd ./apps && git clone erpnext --branch version-14 --depth 1 --origin upstream executed with exit code 128
+2023-10-05 19:40:30,611 WARNING /usr/local/bin/bench get-app erpnext --branch version-14 executed with exit code 1
+2023-10-05 19:40:59,890 INFO /usr/local/bin/bench --site niro.com install-app erpnext
+2023-10-05 19:44:29,781 INFO /usr/local/bin/bench --site niro.com install-app erpnext
+2023-10-05 19:44:38,951 INFO /usr/local/bin/bench get-app erpnext --branch version-14
+2023-10-05 19:44:40,239 LOG Getting erpnext
+2023-10-05 19:44:40,239 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-14 --depth 1 --origin upstream
+2023-10-05 19:44:48,285 LOG Installing erpnext
+2023-10-05 19:44:48,285 DEBUG cd /home/nirosh/frappe-bench && /home/nirosh/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/nirosh/frappe-bench/apps/erpnext 
+2023-10-05 19:45:03,144 DEBUG cd /home/nirosh/frappe-bench/apps/erpnext && yarn install
+2023-10-05 19:45:03,939 DEBUG bench build --app erpnext
+2023-10-05 19:45:04,140 INFO /usr/local/bin/bench build --app erpnext
+2023-10-05 19:45:53,068 INFO /usr/local/bin/bench --site niro.com install-app erpnext
+2023-10-05 19:53:14,643 INFO /usr/local/bin/bench start
+2023-10-05 19:53:16,112 INFO /usr/local/bin/bench watch
+2023-10-05 19:53:16,215 INFO /usr/local/bin/bench worker --queue long
+2023-10-05 19:53:16,215 INFO /usr/local/bin/bench schedule
+2023-10-05 19:53:16,219 INFO /usr/local/bin/bench serve --port 8000
+2023-10-05 19:53:16,240 INFO /usr/local/bin/bench worker --queue short
+2023-10-05 19:53:16,244 INFO /usr/local/bin/bench worker --queue default
+2023-10-06 11:12:30,112 INFO /usr/local/bin/bench start
+2023-10-06 11:12:37,040 INFO /usr/local/bin/bench worker --queue short
+2023-10-06 11:12:37,117 INFO /usr/local/bin/bench watch
+2023-10-06 11:12:37,130 INFO /usr/local/bin/bench schedule
+2023-10-06 11:12:37,143 INFO /usr/local/bin/bench serve --port 8000
+2023-10-06 11:12:37,206 INFO /usr/local/bin/bench worker --queue default
+2023-10-06 11:12:37,245 INFO /usr/local/bin/bench worker --queue long
+2023-10-06 12:00:02,314 INFO /usr/local/bin/bench --verbose --site all backup
+2023-10-06 18:00:04,283 INFO /usr/local/bin/bench --verbose --site all backup
+2023-10-07 11:04:07,432 INFO /usr/local/bin/bench start
+2023-10-07 11:04:12,000 INFO /usr/local/bin/bench worker --queue long
+2023-10-07 11:04:12,037 INFO /usr/local/bin/bench watch
+2023-10-07 11:04:12,047 INFO /usr/local/bin/bench schedule
+2023-10-07 11:04:12,057 INFO /usr/local/bin/bench worker --queue short
+2023-10-07 11:04:12,092 INFO /usr/local/bin/bench serve --port 8000
+2023-10-07 11:04:12,095 INFO /usr/local/bin/bench worker --queue default
+2023-10-07 12:00:01,385 INFO /usr/local/bin/bench --verbose --site all backup
+2023-10-07 18:00:05,132 INFO /usr/local/bin/bench --verbose --site all backup
+2023-10-09 10:37:11,765 INFO /usr/local/bin/bench start
+2023-10-09 10:37:40,974 INFO /usr/local/bin/bench start
+2023-10-09 10:42:29,850 INFO /usr/local/bin/bench start
+2023-10-09 10:42:38,486 INFO /usr/local/bin/bench worker --queue short
+2023-10-09 10:42:38,544 INFO /usr/local/bin/bench worker --queue long
+2023-10-09 10:42:38,558 INFO /usr/local/bin/bench schedule
+2023-10-09 10:42:38,560 INFO /usr/local/bin/bench worker --queue default
+2023-10-09 10:42:38,661 INFO /usr/local/bin/bench watch
+2023-10-09 10:42:38,711 INFO /usr/local/bin/bench serve --port 8000
+2023-10-09 11:13:34,946 INFO /usr/local/bin/bench start
+2023-10-09 11:13:36,252 INFO /usr/local/bin/bench serve --port 8000
+2023-10-09 11:13:36,318 INFO /usr/local/bin/bench worker --queue short
+2023-10-09 11:13:36,337 INFO /usr/local/bin/bench watch
+2023-10-09 11:13:36,396 INFO /usr/local/bin/bench worker --queue default
+2023-10-09 11:13:36,403 INFO /usr/local/bin/bench schedule
+2023-10-09 11:13:36,426 INFO /usr/local/bin/bench worker --queue long
+2023-10-09 12:00:01,558 INFO /usr/local/bin/bench --verbose --site all backup
+2023-10-09 18:00:06,178 INFO /usr/local/bin/bench --verbose --site all backup
+2023-10-09 18:43:52,219 INFO /usr/local/bin/bench start
+2023-10-09 18:43:56,962 INFO /usr/local/bin/bench watch
+2023-10-09 18:43:56,978 INFO /usr/local/bin/bench worker --queue default
+2023-10-09 18:43:57,000 INFO /usr/local/bin/bench serve --port 8000
+2023-10-09 18:43:57,014 INFO /usr/local/bin/bench worker --queue long
+2023-10-09 18:43:57,034 INFO /usr/local/bin/bench worker --queue short
+2023-10-09 18:43:57,079 INFO /usr/local/bin/bench schedule

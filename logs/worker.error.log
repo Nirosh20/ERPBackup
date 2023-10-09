@@ -1,0 +1,2520 @@
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+            self.run()self.run()self.run()
+
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+        pubsub.get_message(ignore_subscribe_messages=True,pubsub.get_message(ignore_subscribe_messages=True,
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+        response = self.parse_response(block=False, timeout=timeout)response = self.parse_response(block=False, timeout=timeout)
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+        if not block and not conn.can_read(timeout=timeout):if not block and not conn.can_read(timeout=timeout):
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+        return self._parser.can_read(timeout)return self._parser.can_read(timeout)
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+        return self.read_from_socket(timeout=timeout,return self.read_from_socket(timeout=timeout,
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+        raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+
+redis.exceptionsredis.exceptions..ConnectionErrorConnectionError: : Connection closed by server.Connection closed by server.
+
+/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/botocore/httpsession.py:19: DeprecationWarning: 'urllib3.contrib.pyopenssl' module is deprecated and will be removed in a future release of urllib3 2.x. Read more in this issue: https://github.com/urllib3/urllib3/issues/2680
+  from urllib3.contrib.pyopenssl import orig_util_SSLContext as SSLContext
+/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/botocore/httpsession.py:19: DeprecationWarning: 'urllib3.contrib.pyopenssl' module is deprecated and will be removed in a future release of urllib3 2.x. Read more in this issue: https://github.com/urllib3/urllib3/issues/2680
+  from urllib3.contrib.pyopenssl import orig_util_SSLContext as SSLContext
+/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/botocore/httpsession.py:19: DeprecationWarning: 'urllib3.contrib.pyopenssl' module is deprecated and will be removed in a future release of urllib3 2.x. Read more in this issue: https://github.com/urllib3/urllib3/issues/2680
+  from urllib3.contrib.pyopenssl import orig_util_SSLContext as SSLContext
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+    main()
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    return self.main(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 206, in start_worker
+    start_worker(
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 268, in start_worker
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 427, in read_from_socket
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    bufflen = recv_into(self._sock, self._buffer)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/_compat.py", line 75, in recv_into
+    return self.read_from_socket(timeout=timeout,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 427, in read_from_socket
+    bufflen = recv_into(self._sock, self._buffer)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/_compat.py", line 75, in recv_into
+    worker.work(
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 644, in work
+        return sock.recv_into(*args, **kwargs)return sock.recv_into(*args, **kwargs)
+
+ConnectionResetErrorConnectionResetError: : [Errno 104] Connection reset by peer[Errno 104] Connection reset by peer
+
+
+During handling of the above exception, another exception occurred:
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+        return _run_code(code, main_globals, None,return _run_code(code, main_globals, None,
+
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+        exec(code, run_globals)exec(code, run_globals)
+
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+    main()
+    main()  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+        click.Group(commands=commands)(prog_name="bench")click.Group(commands=commands)(prog_name="bench")
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+    return self.main(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    rv = self.invoke(ctx)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 206, in start_worker
+    return callback(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 206, in start_worker
+    start_worker(
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 268, in start_worker
+    start_worker(
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 268, in start_worker
+    worker.work(
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 644, in work
+    worker.work(
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 644, in work
+            self.register_death()self.register_death()self.register_death()
+
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 344, in register_death
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 344, in register_death
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 344, in register_death
+    p.execute()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 4019, in execute
+        p.execute()p.execute()
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 4019, in execute
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 4012, in execute
+    return execute(conn, stack, raise_on_error)
+          File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3894, in _execute_transaction
+return execute(conn, stack, raise_on_error)conn = self.connection_pool.get_connection('MULTI',
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3894, in _execute_transaction
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1192, in get_connection
+    self.parse_response(connection, '_')
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3977, in parse_response
+    self.parse_response(connection, '_')
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3977, in parse_response
+    result = Redis.parse_response(
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 739, in read_response
+    result = Redis.parse_response(
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    response = self._parser.read_response()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 470, in read_response
+    response = connection.read_response()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 739, in read_response
+    self.read_from_socket()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 452, in read_from_socket
+        raise ConnectionError("Error while reading from socket: %s" %response = self._parser.read_response()
+
+redis.exceptions  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 470, in read_response
+.ConnectionError: Error while reading from socket: (104, 'Connection reset by peer')
+    self.read_from_socket()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 452, in read_from_socket
+    raise ConnectionError("Error while reading from socket: %s" %
+redis.exceptions.ConnectionError: Error while reading from socket: (104, 'Connection reset by peer')
+    connection.connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/botocore/httpsession.py:19: DeprecationWarning: 'urllib3.contrib.pyopenssl' module is deprecated and will be removed in a future release of urllib3 2.x. Read more in this issue: https://github.com/urllib3/urllib3/issues/2680
+  from urllib3.contrib.pyopenssl import orig_util_SSLContext as SSLContext
+/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/botocore/httpsession.py:19: DeprecationWarning: 'urllib3.contrib.pyopenssl' module is deprecated and will be removed in a future release of urllib3 2.x. Read more in this issue: https://github.com/urllib3/urllib3/issues/2680
+  from urllib3.contrib.pyopenssl import orig_util_SSLContext as SSLContext
+/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/botocore/httpsession.py:19: DeprecationWarning: 'urllib3.contrib.pyopenssl' module is deprecated and will be removed in a future release of urllib3 2.x. Read more in this issue: https://github.com/urllib3/urllib3/issues/2680
+  from urllib3.contrib.pyopenssl import orig_util_SSLContext as SSLContext
+Traceback (most recent call last):
+Exception in thread   File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    sock = self._connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+        self.run()self.run()
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+    main()
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+        pubsub.get_message(ignore_subscribe_messages=True,pubsub.get_message(ignore_subscribe_messages=True,
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+        response = self.parse_response(block=False, timeout=timeout)response = self.parse_response(block=False, timeout=timeout)
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+        if not block and not conn.can_read(timeout=timeout):if not block and not conn.can_read(timeout=timeout):
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+        return self._parser.can_read(timeout)return self._parser.can_read(timeout)
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+        return self.read_from_socket(timeout=timeout,return self.read_from_socket(timeout=timeout,
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+        raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+
+redis.exceptionsredis.exceptions..ConnectionErrorConnectionError: : Connection closed by server.Connection closed by server.
+
+    return self.main(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 206, in start_worker
+    start_worker(
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 268, in start_worker
+    worker.work(
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 645, in work
+    self.unsubscribe()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 550, in unsubscribe
+    self.pubsub.unsubscribe()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3600, in unsubscribe
+    return self.execute_command('UNSUBSCRIBE', *args)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+2023-10-04 12:03:59,069 Worker rq:worker:87bd0292b124472ea730773c9d6aaf4f.nirosh-IdeaPad-3-15IML05-U.3038.home-nirosh-frappe-bench:long: error while executing failure callback
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1198, in get_connection
+    if connection.can_read():
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 1086, in perform_job
+    self.handle_job_success(job=job,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 1017, in handle_job_success
+    pipeline.watch(job.dependents_key)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 4041, in watch
+    return self.execute_command('WATCH', *names)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3822, in execute_command
+    return self.immediate_execute_command(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3836, in immediate_execute_command
+    conn = self.connection_pool.get_connection(command_name,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1202, in get_connection
+    connection.connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 1096, in perform_job
+    self.execute_failure_callback(job)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 1057, in execute_failure_callback
+    job.heartbeat(utcnow(), CALLBACK_TIMEOUT)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 471, in heartbeat
+    connection.hset(self.key, 'last_heartbeat', utcformat(self.last_heartbeat))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3050, in hset
+    return self.execute_command('HSET', name, *items)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+2023-10-04 12:03:59,071 Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1198, in get_connection
+    if connection.can_read():
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 1086, in perform_job
+    self.handle_job_success(job=job,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 1017, in handle_job_success
+    pipeline.watch(job.dependents_key)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 4041, in watch
+    return self.execute_command('WATCH', *names)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3822, in execute_command
+    return self.immediate_execute_command(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3836, in immediate_execute_command
+    conn = self.connection_pool.get_connection(command_name,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1202, in get_connection
+    connection.connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 1096, in perform_job
+    self.execute_failure_callback(job)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 1057, in execute_failure_callback
+    job.heartbeat(utcnow(), CALLBACK_TIMEOUT)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 471, in heartbeat
+    connection.hset(self.key, 'last_heartbeat', utcformat(self.last_heartbeat))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3050, in hset
+    return self.execute_command('HSET', name, *items)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1198, in get_connection
+    if connection.can_read():
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 1086, in perform_job
+    self.handle_job_success(job=job,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 1017, in handle_job_success
+    pipeline.watch(job.dependents_key)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 4041, in watch
+    return self.execute_command('WATCH', *names)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3822, in execute_command
+    return self.immediate_execute_command(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3836, in immediate_execute_command
+    conn = self.connection_pool.get_connection(command_name,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1202, in get_connection
+    connection.connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+2023-10-04 12:03:59,076 Worker rq:worker:87bd0292b124472ea730773c9d6aaf4f.nirosh-IdeaPad-3-15IML05-U.3038.home-nirosh-frappe-bench:long: found an unhandled exception, quitting...
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1198, in get_connection
+    if connection.can_read():
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 613, in work
+    self.execute_job(job, queue)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 874, in execute_job
+    self.monitor_work_horse(job, queue)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 834, in monitor_work_horse
+    self.set_current_job_working_time(0)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 400, in set_current_job_working_time
+    connection.hset(self.key, 'current_job_working_time', current_job_working_time)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3050, in hset
+    return self.execute_command('HSET', name, *items)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1202, in get_connection
+    connection.connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+    main()
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 206, in start_worker
+    start_worker(
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 268, in start_worker
+    worker.work(
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 644, in work
+    self.register_death()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 344, in register_death
+    p.execute()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 4012, in execute
+    conn = self.connection_pool.get_connection('MULTI',
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+2023-10-04 12:03:59,140 Worker rq:worker:85fec32ca59b490880883d37a5569f67.nirosh-IdeaPad-3-15IML05-U.3042.home-nirosh-frappe-bench:default: error while executing failure callback
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1198, in get_connection
+    if connection.can_read():
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 1086, in perform_job
+    self.handle_job_success(job=job,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 1017, in handle_job_success
+    pipeline.watch(job.dependents_key)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 4041, in watch
+    return self.execute_command('WATCH', *names)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3822, in execute_command
+    return self.immediate_execute_command(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3836, in immediate_execute_command
+    conn = self.connection_pool.get_connection(command_name,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1202, in get_connection
+    connection.connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 1096, in perform_job
+    self.execute_failure_callback(job)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 1057, in execute_failure_callback
+    job.heartbeat(utcnow(), CALLBACK_TIMEOUT)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 471, in heartbeat
+    connection.hset(self.key, 'last_heartbeat', utcformat(self.last_heartbeat))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3050, in hset
+    return self.execute_command('HSET', name, *items)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+2023-10-04 12:03:59,141 Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1198, in get_connection
+    if connection.can_read():
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 1086, in perform_job
+    self.handle_job_success(job=job,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 1017, in handle_job_success
+    pipeline.watch(job.dependents_key)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 4041, in watch
+    return self.execute_command('WATCH', *names)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3822, in execute_command
+    return self.immediate_execute_command(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3836, in immediate_execute_command
+    conn = self.connection_pool.get_connection(command_name,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1202, in get_connection
+    connection.connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 1096, in perform_job
+    self.execute_failure_callback(job)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 1057, in execute_failure_callback
+    job.heartbeat(utcnow(), CALLBACK_TIMEOUT)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 471, in heartbeat
+    connection.hset(self.key, 'last_heartbeat', utcformat(self.last_heartbeat))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3050, in hset
+    return self.execute_command('HSET', name, *items)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1198, in get_connection
+    if connection.can_read():
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 1086, in perform_job
+    self.handle_job_success(job=job,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 1017, in handle_job_success
+    pipeline.watch(job.dependents_key)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 4041, in watch
+    return self.execute_command('WATCH', *names)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3822, in execute_command
+    return self.immediate_execute_command(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3836, in immediate_execute_command
+    conn = self.connection_pool.get_connection(command_name,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1202, in get_connection
+    connection.connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+2023-10-04 12:03:59,145 Worker rq:worker:85fec32ca59b490880883d37a5569f67.nirosh-IdeaPad-3-15IML05-U.3042.home-nirosh-frappe-bench:default: found an unhandled exception, quitting...
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1198, in get_connection
+    if connection.can_read():
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 613, in work
+    self.execute_job(job, queue)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 874, in execute_job
+    self.monitor_work_horse(job, queue)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 834, in monitor_work_horse
+    self.set_current_job_working_time(0)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 400, in set_current_job_working_time
+    connection.hset(self.key, 'current_job_working_time', current_job_working_time)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3050, in hset
+    return self.execute_command('HSET', name, *items)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1202, in get_connection
+    connection.connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+    main()
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 206, in start_worker
+    start_worker(
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 268, in start_worker
+    worker.work(
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 644, in work
+    self.register_death()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 344, in register_death
+    p.execute()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 4012, in execute
+    conn = self.connection_pool.get_connection('MULTI',
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/botocore/httpsession.py:19: DeprecationWarning: 'urllib3.contrib.pyopenssl' module is deprecated and will be removed in a future release of urllib3 2.x. Read more in this issue: https://github.com/urllib3/urllib3/issues/2680
+  from urllib3.contrib.pyopenssl import orig_util_SSLContext as SSLContext
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 427, in read_from_socket
+    self.run()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+    bufflen = recv_into(self._sock, self._buffer)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/_compat.py", line 75, in recv_into
+    sock = self._connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+    main()
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 206, in start_worker
+    start_worker(
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 268, in start_worker
+2023-10-04 12:05:22,435 Worker rq:worker:851271a798a8416ca7f225c44f7c2bb6.nirosh-IdeaPad-3-15IML05-U.3353.home-nirosh-frappe-bench:default: found an unhandled exception, quitting...
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 613, in work
+    self.execute_job(job, queue)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 874, in execute_job
+    self.monitor_work_horse(job, queue)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 806, in monitor_work_horse
+    retpid, ret_val = self.wait_for_horse()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 451, in wait_for_horse
+    pid, stat = os.waitpid(self.horse_pid, 0)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 479, in request_stop
+    self._shutdown()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 488, in _shutdown
+    self.set_shutdown_requested_date()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 348, in set_shutdown_requested_date
+    self.connection.hset(self.key, 'shutdown_requested_date', utcformat(utcnow()))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3050, in hset
+    return self.execute_command('HSET', name, *items)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 901, in execute_command
+    return self.parse_response(conn, command_name, **options)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 470, in read_response
+    self.read_from_socket()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    worker.work(
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 644, in work
+    self.register_death()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 344, in register_death
+    p.execute()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 4012, in execute
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    conn = self.connection_pool.get_connection('MULTI',
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1192, in get_connection
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+    main()
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 206, in start_worker
+    start_worker(
+      File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 268, in start_worker
+connection.connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+    worker.work(
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 644, in work
+    self.register_death()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 344, in register_death
+    p.execute()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 4012, in execute
+    conn = self.connection_pool.get_connection('MULTI',
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    return sock.recv_into(*args, **kwargs)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+    main()
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 206, in start_worker
+    start_worker(
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 268, in start_worker
+    worker.work(
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 644, in work
+    self.register_death()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 344, in register_death
+    p.execute()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 4019, in execute
+    return execute(conn, stack, raise_on_error)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3894, in _execute_transaction
+    self.parse_response(connection, '_')
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3977, in parse_response
+    result = Redis.parse_response(
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 470, in read_response
+    self.read_from_socket()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 452, in read_from_socket
+    raise ConnectionError("Error while reading from socket: %s" %
+redis.exceptions.ConnectionError: Error while reading from socket: (104, 'Connection reset by peer')
+2023-10-04 12:05:22,953 Worker rq:worker:851271a798a8416ca7f225c44f7c2bb6.nirosh-IdeaPad-3-15IML05-U.3353.home-nirosh-frappe-bench:default: error while executing failure callback
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1198, in get_connection
+    if connection.can_read():
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 1086, in perform_job
+    self.handle_job_success(job=job,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 1017, in handle_job_success
+    pipeline.watch(job.dependents_key)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 4041, in watch
+    return self.execute_command('WATCH', *names)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3822, in execute_command
+    return self.immediate_execute_command(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3836, in immediate_execute_command
+    conn = self.connection_pool.get_connection(command_name,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1202, in get_connection
+    connection.connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 1096, in perform_job
+    self.execute_failure_callback(job)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 1057, in execute_failure_callback
+    job.heartbeat(utcnow(), CALLBACK_TIMEOUT)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 471, in heartbeat
+    connection.hset(self.key, 'last_heartbeat', utcformat(self.last_heartbeat))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3050, in hset
+    return self.execute_command('HSET', name, *items)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+2023-10-04 12:05:22,954 Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1198, in get_connection
+    if connection.can_read():
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 1086, in perform_job
+    self.handle_job_success(job=job,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 1017, in handle_job_success
+    pipeline.watch(job.dependents_key)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 4041, in watch
+    return self.execute_command('WATCH', *names)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3822, in execute_command
+    return self.immediate_execute_command(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3836, in immediate_execute_command
+    conn = self.connection_pool.get_connection(command_name,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1202, in get_connection
+    connection.connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 1096, in perform_job
+    self.execute_failure_callback(job)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 1057, in execute_failure_callback
+    job.heartbeat(utcnow(), CALLBACK_TIMEOUT)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 471, in heartbeat
+    connection.hset(self.key, 'last_heartbeat', utcformat(self.last_heartbeat))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3050, in hset
+    return self.execute_command('HSET', name, *items)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1198, in get_connection
+    if connection.can_read():
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 1086, in perform_job
+    self.handle_job_success(job=job,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 1017, in handle_job_success
+    pipeline.watch(job.dependents_key)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 4041, in watch
+    return self.execute_command('WATCH', *names)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3822, in execute_command
+    return self.immediate_execute_command(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3836, in immediate_execute_command
+    conn = self.connection_pool.get_connection(command_name,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1202, in get_connection
+    connection.connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+Exception in thread Exception in thread Thread-1:
+Thread-1Traceback (most recent call last):
+:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+        self.run()self.run()
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+        pubsub.get_message(ignore_subscribe_messages=True,pubsub.get_message(ignore_subscribe_messages=True,
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+      File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+response = self.parse_response(block=False, timeout=timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+        if not block and not conn.can_read(timeout=timeout):if not block and not conn.can_read(timeout=timeout):
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+        return self._parser.can_read(timeout)return self._parser.can_read(timeout)
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+        return self.read_from_socket(timeout=timeout,return self.read_from_socket(timeout=timeout,
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+        raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+
+redis.exceptions.ConnectionErrorredis.exceptions: .Connection closed by server.ConnectionError
+: Connection closed by server.
+/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/botocore/httpsession.py:19: DeprecationWarning: 'urllib3.contrib.pyopenssl' module is deprecated and will be removed in a future release of urllib3 2.x. Read more in this issue: https://github.com/urllib3/urllib3/issues/2680
+  from urllib3.contrib.pyopenssl import orig_util_SSLContext as SSLContext
+Exception in thread Exception in thread Thread-1:
+Thread-1Traceback (most recent call last):
+:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+    self.run()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+        return self._parser.can_read(timeout)return self._parser.can_read(timeout)
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    return self.read_from_socket(timeout=timeout,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions    .raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)ConnectionError
+: Connection closed by server.
+redis.exceptions.ConnectionError: Connection closed by server.
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    return self._parser.can_read(timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+    main()
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 206, in start_worker
+    start_worker(
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 268, in start_worker
+    worker.work(
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 645, in work
+    self.unsubscribe()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 550, in unsubscribe
+    self.pubsub.unsubscribe()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3600, in unsubscribe
+    return self.execute_command('UNSUBSCRIBE', *args)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    self.run()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 427, in read_from_socket
+    bufflen = recv_into(self._sock, self._buffer)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/_compat.py", line 75, in recv_into
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+    Exception in thread return sock.recv_into(*args, **kwargs)Thread-1:
+
+ConnectionResetError: [Errno 104] Connection reset by peerTraceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+        self.run()return _run_code(code, main_globals, None,
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    pubsub.get_message(ignore_subscribe_messages=True,
+      File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+exec(code, run_globals)
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+            main()
+pubsub.get_message(ignore_subscribe_messages=True,  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+    main()
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+if not block and not conn.can_read(timeout=timeout):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    click.Group(commands=commands)(prog_name="bench")
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+    return self._parser.can_read(timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+        return self.main(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+return self.read_from_socket(timeout=timeout,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    rv = self.invoke(ctx)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+            response = self.parse_response(block=False, timeout=timeout)return self.main(*args, **kwargs)
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)return _process_result(sub_ctx.command.invoke(sub_ctx))
+
+redis.exceptions.ConnectionError  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+: Connection closed by server.
+        return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 206, in start_worker
+    if not block and not conn.can_read(timeout=timeout):
+rv = self.invoke(ctx)  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+        return self._parser.can_read(timeout)return _process_result(sub_ctx.command.invoke(sub_ctx))
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return self.read_from_socket(timeout=timeout,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError    : Connection closed by server.return callback(*args, **kwargs)
+
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 206, in start_worker
+    start_worker(
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 268, in start_worker
+    start_worker(
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 268, in start_worker
+    worker.work(
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 644, in work
+    worker.work(
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 644, in work
+        self.register_death()self.register_death()
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 344, in register_death
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 344, in register_death
+        p.execute()p.execute()
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 4019, in execute
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 4019, in execute
+    return execute(conn, stack, raise_on_error)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3894, in _execute_transaction
+    return execute(conn, stack, raise_on_error)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3894, in _execute_transaction
+    self.parse_response(connection, '_')
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3977, in parse_response
+    self.parse_response(connection, '_')
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3977, in parse_response
+    result = Redis.parse_response(
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    result = Redis.parse_response(
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 739, in read_response
+    response = connection.read_response()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+      File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 470, in read_response
+response = self._parser.read_response()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 470, in read_response
+        self.read_from_socket()self.read_from_socket()
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 452, in read_from_socket
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions    .raise ConnectionError("Error while reading from socket: %s" %ConnectionError
+: redis.exceptionsConnection closed by server..
+ConnectionError: Error while reading from socket: (104, 'Connection reset by peer')
+Exception in thread Exception in thread Thread-1:
+Thread-1:
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+      File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+self.run()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+        pubsub.get_message(ignore_subscribe_messages=True,pubsub.get_message(ignore_subscribe_messages=True,
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+        response = self.parse_response(block=False, timeout=timeout)response = self.parse_response(block=False, timeout=timeout)
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+        if not block and not conn.can_read(timeout=timeout):if not block and not conn.can_read(timeout=timeout):
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)    
+return self._parser.can_read(timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+        return self.read_from_socket(timeout=timeout,return self.read_from_socket(timeout=timeout,
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+        raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+
+redis.exceptionsredis.exceptions..ConnectionErrorConnectionError: : Connection closed by server.Connection closed by server.
+
+/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/botocore/httpsession.py:19: DeprecationWarning: 'urllib3.contrib.pyopenssl' module is deprecated and will be removed in a future release of urllib3 2.x. Read more in this issue: https://github.com/urllib3/urllib3/issues/2680
+  from urllib3.contrib.pyopenssl import orig_util_SSLContext as SSLContext
+/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/botocore/httpsession.py:19: DeprecationWarning: 'urllib3.contrib.pyopenssl' module is deprecated and will be removed in a future release of urllib3 2.x. Read more in this issue: https://github.com/urllib3/urllib3/issues/2680
+  from urllib3.contrib.pyopenssl import orig_util_SSLContext as SSLContext
+/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/botocore/httpsession.py:19: DeprecationWarning: 'urllib3.contrib.pyopenssl' module is deprecated and will be removed in a future release of urllib3 2.x. Read more in this issue: https://github.com/urllib3/urllib3/issues/2680
+  from urllib3.contrib.pyopenssl import orig_util_SSLContext as SSLContext
+Exception in thread Exception in thread Thread-1Thread-1:
+:
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()    
+self.run()  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+        pubsub.get_message(ignore_subscribe_messages=True,pubsub.get_message(ignore_subscribe_messages=True,
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+        response = self.parse_response(block=False, timeout=timeout)response = self.parse_response(block=False, timeout=timeout)
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+        if not block and not conn.can_read(timeout=timeout):if not block and not conn.can_read(timeout=timeout):
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+        return self._parser.can_read(timeout)return self._parser.can_read(timeout)
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+        return self.read_from_socket(timeout=timeout,return self.read_from_socket(timeout=timeout,
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+        raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+
+redis.exceptions.redis.exceptionsConnectionError.: ConnectionErrorConnection closed by server.: 
+Connection closed by server.
+/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/botocore/httpsession.py:19: DeprecationWarning: 'urllib3.contrib.pyopenssl' module is deprecated and will be removed in a future release of urllib3 2.x. Read more in this issue: https://github.com/urllib3/urllib3/issues/2680
+  from urllib3.contrib.pyopenssl import orig_util_SSLContext as SSLContext
+/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/botocore/httpsession.py:19: DeprecationWarning: 'urllib3.contrib.pyopenssl' module is deprecated and will be removed in a future release of urllib3 2.x. Read more in this issue: https://github.com/urllib3/urllib3/issues/2680
+  from urllib3.contrib.pyopenssl import orig_util_SSLContext as SSLContext
+/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/botocore/httpsession.py:19: DeprecationWarning: 'urllib3.contrib.pyopenssl' module is deprecated and will be removed in a future release of urllib3 2.x. Read more in this issue: https://github.com/urllib3/urllib3/issues/2680
+  from urllib3.contrib.pyopenssl import orig_util_SSLContext as SSLContext
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/botocore/httpsession.py:19: DeprecationWarning: 'urllib3.contrib.pyopenssl' module is deprecated and will be removed in a future release of urllib3 2.x. Read more in this issue: https://github.com/urllib3/urllib3/issues/2680
+  from urllib3.contrib.pyopenssl import orig_util_SSLContext as SSLContext
+/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/botocore/httpsession.py:19: DeprecationWarning: 'urllib3.contrib.pyopenssl' module is deprecated and will be removed in a future release of urllib3 2.x. Read more in this issue: https://github.com/urllib3/urllib3/issues/2680
+  from urllib3.contrib.pyopenssl import orig_util_SSLContext as SSLContext
+/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/botocore/httpsession.py:19: DeprecationWarning: 'urllib3.contrib.pyopenssl' module is deprecated and will be removed in a future release of urllib3 2.x. Read more in this issue: https://github.com/urllib3/urllib3/issues/2680
+  from urllib3.contrib.pyopenssl import orig_util_SSLContext as SSLContext
+/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/botocore/httpsession.py:19: DeprecationWarning: 'urllib3.contrib.pyopenssl' module is deprecated and will be removed in a future release of urllib3 2.x. Read more in this issue: https://github.com/urllib3/urllib3/issues/2680
+  from urllib3.contrib.pyopenssl import orig_util_SSLContext as SSLContext
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+        sock = self._connect()sock = self._connect()
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+        raise errraise err
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+        sock.connect(socket_address)sock.connect(socket_address)
+
+ConnectionRefusedErrorConnectionRefusedError: : [Errno 111] Connection refused[Errno 111] Connection refused
+
+
+During handling of the above exception, another exception occurred:
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+        return _run_code(code, main_globals, None,return _run_code(code, main_globals, None,
+
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+        exec(code, run_globals)exec(code, run_globals)
+
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+        main()main()
+
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+        click.Group(commands=commands)(prog_name="bench")click.Group(commands=commands)(prog_name="bench")
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+    return self.main(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    rv = self.invoke(ctx)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 206, in start_worker
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 206, in start_worker
+    start_worker(
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 268, in start_worker
+    start_worker(
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 268, in start_worker
+        worker.work(worker.work(
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 645, in work
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 645, in work
+    self.unsubscribe()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 550, in unsubscribe
+        self.unsubscribe()self.pubsub.unsubscribe()
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3600, in unsubscribe
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 550, in unsubscribe
+    self.pubsub.unsubscribe()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3600, in unsubscribe
+    return self.execute_command('UNSUBSCRIBE', *args)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3466, in execute_command
+    return self.execute_command('UNSUBSCRIBE', *args)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1192, in get_connection
+    self.connection = self.connection_pool.get_connection(
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    connection.connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+        sock = self._connect()sock = self._connect()
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+        raise errraise err
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+        sock.connect(socket_address)sock.connect(socket_address)
+
+ConnectionRefusedErrorConnectionRefusedError: : [Errno 111] Connection refused[Errno 111] Connection refused
+
+
+During handling of the above exception, another exception occurred:
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+        return _run_code(code, main_globals, None,return _run_code(code, main_globals, None,
+
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+        exec(code, run_globals)exec(code, run_globals)
+
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+        main()main()
+
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+    click.Group(commands=commands)(prog_name="bench")
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+        return self.main(*args, **kwargs)return self.main(*args, **kwargs)
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    rv = self.invoke(ctx)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 206, in start_worker
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 206, in start_worker
+    start_worker(
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 268, in start_worker
+    start_worker(
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 268, in start_worker
+        worker.work(worker.work(
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 645, in work
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 645, in work
+        self.unsubscribe()self.unsubscribe()
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 550, in unsubscribe
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 550, in unsubscribe
+        self.pubsub.unsubscribe()self.pubsub.unsubscribe()
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3600, in unsubscribe
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3600, in unsubscribe
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+        return self.execute_command('UNSUBSCRIBE', *args)return self.execute_command('UNSUBSCRIBE', *args)
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3466, in execute_command
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(    
+self.connection = self.connection_pool.get_connection(
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1192, in get_connection
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1192, in get_connection
+        connection.connect()connection.connect()
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+        raise ConnectionError(self._error_message(e))raise ConnectionError(self._error_message(e))
+
+redis.exceptionsredis.exceptions..ConnectionErrorConnectionError: : Error 111 connecting to localhost:11000. Connection refused.Error 111 connecting to localhost:11000. Connection refused.
+
+    self.run()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/monitor.py", line 118, in flush
+    logs = frappe.cache().lrange(MONITOR_REDIS_KEY, 0, -1)
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/redis_wrapper.py", line 146, in lrange
+    return super().lrange(self.make_key(key), start, stop)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1975, in lrange
+    return self.execute_command('LRANGE', name, start, end)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:13000. Connection refused.
+2023-10-07 18:20:50,556 Worker rq:worker:30629fe6f4184b1caccf614f7a1043d8.nirosh-IdeaPad-3-15IML05-U.35368.home-nirosh-frappe-bench:default: error while executing failure callback
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1198, in get_connection
+    if connection.can_read():
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 1086, in perform_job
+    self.handle_job_success(job=job,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 1017, in handle_job_success
+    pipeline.watch(job.dependents_key)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 4041, in watch
+    return self.execute_command('WATCH', *names)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3822, in execute_command
+    return self.immediate_execute_command(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3836, in immediate_execute_command
+    conn = self.connection_pool.get_connection(command_name,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1202, in get_connection
+    connection.connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 1096, in perform_job
+    self.execute_failure_callback(job)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 1057, in execute_failure_callback
+    job.heartbeat(utcnow(), CALLBACK_TIMEOUT)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 471, in heartbeat
+    connection.hset(self.key, 'last_heartbeat', utcformat(self.last_heartbeat))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3050, in hset
+    return self.execute_command('HSET', name, *items)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+2023-10-07 18:20:50,622 Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1198, in get_connection
+    if connection.can_read():
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 1086, in perform_job
+    self.handle_job_success(job=job,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 1017, in handle_job_success
+    pipeline.watch(job.dependents_key)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 4041, in watch
+    return self.execute_command('WATCH', *names)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3822, in execute_command
+    return self.immediate_execute_command(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3836, in immediate_execute_command
+    conn = self.connection_pool.get_connection(command_name,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1202, in get_connection
+    connection.connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 1096, in perform_job
+    self.execute_failure_callback(job)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 1057, in execute_failure_callback
+    job.heartbeat(utcnow(), CALLBACK_TIMEOUT)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 471, in heartbeat
+    connection.hset(self.key, 'last_heartbeat', utcformat(self.last_heartbeat))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3050, in hset
+    return self.execute_command('HSET', name, *items)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1198, in get_connection
+    if connection.can_read():
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 1086, in perform_job
+    self.handle_job_success(job=job,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 1017, in handle_job_success
+    pipeline.watch(job.dependents_key)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 4041, in watch
+    return self.execute_command('WATCH', *names)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3822, in execute_command
+    return self.immediate_execute_command(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3836, in immediate_execute_command
+    conn = self.connection_pool.get_connection(command_name,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1202, in get_connection
+    connection.connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+2023-10-07 18:20:50,635 Worker rq:worker:30629fe6f4184b1caccf614f7a1043d8.nirosh-IdeaPad-3-15IML05-U.35368.home-nirosh-frappe-bench:default: found an unhandled exception, quitting...
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1198, in get_connection
+    if connection.can_read():
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 613, in work
+    self.execute_job(job, queue)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 874, in execute_job
+    self.monitor_work_horse(job, queue)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 834, in monitor_work_horse
+    self.set_current_job_working_time(0)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 400, in set_current_job_working_time
+    connection.hset(self.key, 'current_job_working_time', current_job_working_time)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3050, in hset
+    return self.execute_command('HSET', name, *items)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1202, in get_connection
+    connection.connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+    main()
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 206, in start_worker
+    start_worker(
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 268, in start_worker
+    worker.work(
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 644, in work
+    self.register_death()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 344, in register_death
+    p.execute()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 4012, in execute
+    conn = self.connection_pool.get_connection('MULTI',
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+Exception in thread Exception in thread Thread-1:
+Exception in thread Thread-1Traceback (most recent call last):
+:
+Thread-1Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+:
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+        self.run()self.run()    
+
+self.run()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+        pubsub.get_message(ignore_subscribe_messages=True,pubsub.get_message(ignore_subscribe_messages=True,
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+            return self._parser.can_read(timeout)return self._parser.can_read(timeout)return self._parser.can_read(timeout)
+
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+        return self.read_from_socket(timeout=timeout,return self.read_from_socket(timeout=timeout,
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+        raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+
+redis.exceptionsredis.exceptions..ConnectionErrorConnectionError: : Connection closed by server.Connection closed by server.
+
+/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/botocore/httpsession.py:19: DeprecationWarning: 'urllib3.contrib.pyopenssl' module is deprecated and will be removed in a future release of urllib3 2.x. Read more in this issue: https://github.com/urllib3/urllib3/issues/2680
+  from urllib3.contrib.pyopenssl import orig_util_SSLContext as SSLContext
+/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/botocore/httpsession.py:19: DeprecationWarning: 'urllib3.contrib.pyopenssl' module is deprecated and will be removed in a future release of urllib3 2.x. Read more in this issue: https://github.com/urllib3/urllib3/issues/2680
+  from urllib3.contrib.pyopenssl import orig_util_SSLContext as SSLContext
+/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/botocore/httpsession.py:19: DeprecationWarning: 'urllib3.contrib.pyopenssl' module is deprecated and will be removed in a future release of urllib3 2.x. Read more in this issue: https://github.com/urllib3/urllib3/issues/2680
+  from urllib3.contrib.pyopenssl import orig_util_SSLContext as SSLContext
+/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/botocore/httpsession.py:19: DeprecationWarning: 'urllib3.contrib.pyopenssl' module is deprecated and will be removed in a future release of urllib3 2.x. Read more in this issue: https://github.com/urllib3/urllib3/issues/2680
+  from urllib3.contrib.pyopenssl import orig_util_SSLContext as SSLContext
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 427, in read_from_socket
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 427, in read_from_socket
+        bufflen = recv_into(self._sock, self._buffer)bufflen = recv_into(self._sock, self._buffer)
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/_compat.py", line 75, in recv_into
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/_compat.py", line 75, in recv_into
+    return sock.recv_into(*args, **kwargs)    
+return sock.recv_into(*args, **kwargs)
+ConnectionResetError: [Errno 104] Connection reset by peerConnectionResetError
+: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+        return _run_code(code, main_globals, None,return _run_code(code, main_globals, None,
+
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+        exec(code, run_globals)exec(code, run_globals)
+
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+        main()main()
+
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+        click.Group(commands=commands)(prog_name="bench")click.Group(commands=commands)(prog_name="bench")
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+        return self.main(*args, **kwargs)return self.main(*args, **kwargs)
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+        rv = self.invoke(ctx)rv = self.invoke(ctx)
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+      File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 206, in start_worker
+    return callback(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 206, in start_worker
+        start_worker(start_worker(
+
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 268, in start_worker
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 268, in start_worker
+        worker.work(worker.work(
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 644, in work
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 644, in work
+        self.register_death()self.register_death()
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 344, in register_death
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 344, in register_death
+    p.execute()
+      File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 4019, in execute
+p.execute()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 4019, in execute
+Traceback (most recent call last):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 427, in read_from_socket
+    return execute(conn, stack, raise_on_error)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3894, in _execute_transaction
+    return execute(conn, stack, raise_on_error)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3894, in _execute_transaction
+    self.parse_response(connection, '_')
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3977, in parse_response
+    self.parse_response(connection, '_')
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3977, in parse_response
+    result = Redis.parse_response(
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    result = Redis.parse_response(
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 739, in read_response
+    response = connection.read_response()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 470, in read_response
+    response = self._parser.read_response()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 470, in read_response
+    self.read_from_socket()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 452, in read_from_socket
+    self.read_from_socket()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 452, in read_from_socket
+    raise ConnectionError("Error while reading from socket: %s" %
+redis.exceptions.ConnectionError: Error while reading from socket: (104, 'Connection reset by peer')
+    raise ConnectionError("Error while reading from socket: %s" %
+redis.exceptions.ConnectionError: Error while reading from socket: (104, 'Connection reset by peer')
+    bufflen = recv_into(self._sock, self._buffer)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/_compat.py", line 75, in recv_into
+    return sock.recv_into(*args, **kwargs)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+    main()
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 206, in start_worker
+    start_worker(
+  File "/home/nirosh/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 268, in start_worker
+    worker.work(
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 644, in work
+    self.register_death()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 344, in register_death
+    p.execute()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 4019, in execute
+    return execute(conn, stack, raise_on_error)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3894, in _execute_transaction
+    self.parse_response(connection, '_')
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3977, in parse_response
+    result = Redis.parse_response(
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 470, in read_response
+    self.read_from_socket()
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 452, in read_from_socket
+    raise ConnectionError("Error while reading from socket: %s" %
+redis.exceptions.ConnectionError: Error while reading from socket: (104, 'Connection reset by peer')
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+            self.run()self.run()self.run()
+
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+            pubsub.get_message(ignore_subscribe_messages=True,pubsub.get_message(ignore_subscribe_messages=True,pubsub.get_message(ignore_subscribe_messages=True,
+
+
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    return self.read_from_socket(timeout=timeout,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    return self.read_from_socket(timeout=timeout,
+  File "/home/nirosh/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+    redis.exceptionsraise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR).
+ConnectionError: Connection closed by server.
+redis.exceptions.ConnectionError: Connection closed by server.
